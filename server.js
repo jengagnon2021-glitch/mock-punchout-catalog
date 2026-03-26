@@ -29,7 +29,7 @@ app.post('/punchout', (req, res) => {
 
   const timestamp = new Date().toISOString();
   const host = req.protocol + '://' + req.get('host');
-  const startPageUrl = `${host}/catalog?cookie=${encodeURIComponent(buyerCookie)}`;
+  const startPageUrl = `https://${req.get('host')}/catalog?cookie=${encodeURIComponent(buyerCookie)}`;
 
   const responseXml = `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE cXML SYSTEM "http://xml.cXML.org/schemas/cXML/1.2.014/cXML.dtd">
