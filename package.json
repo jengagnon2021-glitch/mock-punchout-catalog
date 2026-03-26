@@ -1,0 +1,12 @@
+{
+  "name": "mock-punchout-catalog",
+  "version": "1.0.0",
+  "description": "Mock cXML PunchOut catalog for D365 testing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
